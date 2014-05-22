@@ -5,6 +5,7 @@ class CatalogController < ApplicationController
 
   include Blacklight::Catalog
 
+      #:q => '*',
   configure_blacklight do |config|
     ## Default parameters to send to solr for all search-like requests. See also SolrHelper#solr_search_params
     config.default_solr_params = { 
@@ -56,6 +57,10 @@ class CatalogController < ApplicationController
     #
     # :show may be set to false if you don't want the facet to be drawn in the 
     # facet bar
+    config.add_facet_field 'cliente', :label => 'Cliente'
+    config.add_facet_field 'aplicativo', :label => 'Servicio'
+    config.add_facet_field 'entorno', :label => 'Entorno'
+    config.add_facet_field 'tipo', :label => 'Tipo'
     config.add_facet_field 'format', :label => 'Format'
     config.add_facet_field 'pub_date', :label => 'Publication Year', :single => true
     config.add_facet_field 'subject_topic_facet', :label => 'Topic', :limit => 20 
@@ -80,6 +85,11 @@ class CatalogController < ApplicationController
 
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
+    #config.add_index_field 'id', :label => 'Identificador'
+    config.add_index_field 'hostname', :label => 'Nombre'
+    config.add_index_field 'fqdn', :label => 'Nombre cualificado'
+    config.add_index_field 'puerto', :label => 'Puerto'
+    config.add_index_field 'tipo', :label => 'Tipo'
     config.add_index_field 'title_display', :label => 'Title'
     config.add_index_field 'title_vern_display', :label => 'Title'
     config.add_index_field 'author_display', :label => 'Author'
@@ -92,6 +102,11 @@ class CatalogController < ApplicationController
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
+    #config.add_show_field 'id', :label => 'Identificador'
+    config.add_show_field 'hostname', :label => 'Nombre'
+    config.add_show_field 'fqdn', :label => 'Nombre cualificado'
+    config.add_show_field 'puerto', :label => 'Puerto'
+    config.add_show_field 'tipo', :label => 'Tipo'
     config.add_show_field 'title_display', :label => 'Title'
     config.add_show_field 'title_vern_display', :label => 'Title'
     config.add_show_field 'subtitle_display', :label => 'Subtitle'
@@ -170,10 +185,11 @@ class CatalogController < ApplicationController
     # label in pulldown is followed by the name of the SOLR field to sort by and
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
-    config.add_sort_field 'score desc, pub_date_sort desc, title_sort asc', :label => 'relevance'
-    config.add_sort_field 'pub_date_sort desc, title_sort asc', :label => 'year'
-    config.add_sort_field 'author_sort asc, title_sort asc', :label => 'author'
-    config.add_sort_field 'title_sort asc, pub_date_sort desc', :label => 'title'
+    config.add_sort_field 'score desc', :label => 'relevance'
+    #config.add_sort_field 'score desc, pub_date_sort desc, title_sort asc', :label => 'relevance'
+    #config.add_sort_field 'pub_date_sort desc, title_sort asc', :label => 'year'
+    #config.add_sort_field 'author_sort asc, title_sort asc', :label => 'author'
+    #config.add_sort_field 'title_sort asc, pub_date_sort desc', :label => 'title'
 
     # If there are more than this many search results, no spelling ("did you 
     # mean") suggestion is offered.

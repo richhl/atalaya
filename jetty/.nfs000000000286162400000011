@@ -1,0 +1,225 @@
+0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
+55   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/vagrant/centinela/centinela/jetty/contexts at interval 0
+124  [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/vagrant/centinela/centinela/jetty/contexts/solr.xml
+10919 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+11031 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+11122 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+11124 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/vagrant/centinela/centinela/jetty/solr
+11126 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/vagrant/centinela/centinela/jetty/solr/'
+11148 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/mysql-connector-java-5.1.30-bin.jar' to classloader
+11151 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/' to classloader
+11154 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/solr-clustering-4.6.0.jar' to classloader
+11156 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/solr-analysis-extras-4.6.0.jar' to classloader
+11159 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/solr-dataimporthandler-4.6.0.jar' to classloader
+11162 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/solr-langid-4.6.0.jar' to classloader
+11545 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/vagrant/centinela/centinela/jetty/solr/solr.xml
+12135 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 11223864
+12137 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/vagrant/centinela/centinela/jetty/solr/]
+12137 [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /home/vagrant/centinela/centinela/jetty/solr/lib
+12151 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/mysql-connector-java-5.1.30-bin.jar' to classloader
+12153 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/' to classloader
+12154 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/solr-clustering-4.6.0.jar' to classloader
+12156 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/solr-analysis-extras-4.6.0.jar' to classloader
+12158 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/solr-dataimporthandler-4.6.0.jar' to classloader
+12159 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/solr-langid-4.6.0.jar' to classloader
+12217 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+12218 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: http://
+12219 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+12219 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+12220 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+12220 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+12221 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+12221 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+12223 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+13384 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+13386 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+13552 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using instanceDir: /home/vagrant/centinela/centinela/jetty/solr/blacklight-core
+13557 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/vagrant/centinela/centinela/jetty/solr/blacklight-core/'
+13556 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'centinela-core' using instanceDir: /home/vagrant/centinela/centinela/jetty/solr/centinela-core
+13560 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/vagrant/centinela/centinela/jetty/solr/centinela-core/'
+13723 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+13732 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+13757 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-fsa-1.7.1.jar' to classloader
+13760 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-polish-1.7.1.jar' to classloader
+13770 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-stemming-1.7.1.jar' to classloader
+13771 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-fsa-1.7.1.jar' to classloader
+13775 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-polish-1.7.1.jar' to classloader
+13776 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lib/icu4j-49.1.jar' to classloader
+13781 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-stemming-1.7.1.jar' to classloader
+13783 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lib/icu4j-49.1.jar' to classloader
+13803 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.6.0.jar' to classloader
+13810 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.6.0.jar' to classloader
+13814 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.6.0.jar' to classloader
+13818 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.6.0.jar' to classloader
+13820 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.6.0.jar' to classloader
+13824 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.6.0.jar' to classloader
+13826 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.6.0.jar' to classloader
+13830 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/vagrant/centinela/centinela/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.6.0.jar' to classloader
+14297 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: LUCENE_40
+14299 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: LUCENE_40
+14506 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+14512 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+14528 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from schema.xml
+14528 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from schema.xml
+14680 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.schema.IndexSchema  – [centinela-core] Schema name=Blacklight Demo Index
+14703 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=Blacklight Demo Index
+15731 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
+15734 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
+15735 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is OR
+15737 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is OR
+15739 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+15742 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+16418 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – solr.StandardDirectoryFactory
+16420 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.StandardDirectoryFactory
+16452 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /home/vagrant/centinela/centinela/jetty/solr/blacklight-core/, dataDir=/home/vagrant/centinela/centinela/jetty/solr/blacklight-core/data/
+16453 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
+16457 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – [centinela-core] Opening new SolrCore at /home/vagrant/centinela/centinela/jetty/solr/centinela-core/, dataDir=/home/vagrant/centinela/centinela/jetty/solr/centinela-core/data/
+16458 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: centinela-core
+16480 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/vagrant/centinela/centinela/jetty/solr/centinela-core/data
+16481 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/vagrant/centinela/centinela/jetty/solr/blacklight-core/data
+16494 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/vagrant/centinela/centinela/jetty/solr/centinela-core/data/index/
+16497 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/vagrant/centinela/centinela/jetty/solr/blacklight-core/data/index/
+16543 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/vagrant/centinela/centinela/jetty/solr/centinela-core/data/index
+16545 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/vagrant/centinela/centinela/jetty/solr/blacklight-core/data/index
+16745 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+16745 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+16753 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
+16754 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
+16756 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+16756 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+16774 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created standard: solr.StandardRequestHandler
+16775 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+16775 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+16775 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created standard: solr.StandardRequestHandler
+16776 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+16777 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+16791 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+16792 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+16793 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: org.apache.solr.handler.admin.AdminHandlers
+16793 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: org.apache.solr.handler.admin.AdminHandlers
+16812 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+16813 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+16892 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created search: solr.SearchHandler
+16894 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created document: solr.SearchHandler
+16895 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created advanced: solr.SearchHandler
+16902 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+16903 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created search: solr.SearchHandler
+16903 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created document: solr.SearchHandler
+16904 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.RequestHandlers  – created advanced: solr.SearchHandler
+16939 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+16941 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+16963 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: disabled
+16964 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+16964 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: disabled
+16966 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+17325 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/home/vagrant/centinela/centinela/jetty/solr/blacklight-core/data/index,segFN=segments_3,generation=3}
+17326 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/home/vagrant/centinela/centinela/jetty/solr/centinela-core/data/index,segFN=segments_n,generation=23}
+17327 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 23
+17327 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 3
+17440 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@13e6946 main
+17452 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+17460 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@c80e77 main
+17461 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+17560 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: default
+17675 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: default
+17689 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: author
+17730 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: subject
+17779 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: title
+17780 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+17845 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: author
+17917 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: subject
+18010 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: title
+18012 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+18012 [coreLoadExecutor-3-thread-2] INFO  org.apache.solr.core.CoreContainer  – registering core: centinela-core
+18012 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – [centinela-core] Registered new searcher Searcher@13e6946 main{StandardDirectoryReader(segments_n:63:nrt _j(4.6):C165)}
+18017 [searcherExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@c80e77 main{StandardDirectoryReader(segments_3:7:nrt _1(4.6):C30)}
+18018 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
+18021 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/vagrant/centinela/centinela/jetty
+18021 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+18096 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+234775 [qtp12874272-31] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1400748789416&wt=json} status=0 QTime=12 
+234958 [qtp12874272-31] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1400748789514&wt=json} status=0 QTime=84 
+238684 [qtp12874272-31] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1400748793155&contentType=text/html;charset%3Dutf-8} status=404 QTime=49 
+238704 [qtp12874272-10] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1400748793156&contentType=text/html;charset%3Dutf-8} status=404 QTime=66 
+238733 [qtp12874272-27] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/ping params={action=status&_=1400748793314&wt=json} status=503 QTime=6 
+238741 [qtp12874272-12] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/luke params={numTerms=0&_=1400748793299&show=index&wt=json} status=0 QTime=24 
+238750 [qtp12874272-11] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1400748793311} status=0 QTime=30 
+238831 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/system params={_=1400748793309&wt=json} status=0 QTime=112 
+238865 [qtp12874272-29] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+238915 [qtp12874272-29] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/replication params={command=details&_=1400748793306&wt=json} status=0 QTime=200 
+240510 [qtp12874272-29] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1400748795145&wt=json} status=0 QTime=10 
+240693 [qtp12874272-29] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1400748795315&wt=json} status=0 QTime=0 
+240715 [qtp12874272-11] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/dataimport params={indent=true&command=status&_=1400748795322&wt=json} status=0 QTime=9 
+240751 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/dataimport params={indent=true&command=show-config&_=1400748795317} status=0 QTime=49 
+250696 [qtp12874272-13] INFO  org.apache.solr.handler.dataimport.DataImporter  – Loading DIH Configuration: data-config.xml
+250747 [qtp12874272-13] INFO  org.apache.solr.handler.dataimport.DataImporter  – Data Configuration loaded successfully
+250759 [qtp12874272-13] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/dataimport params={optimize=false&indent=true&clean=true&commit=true&verbose=false&command=full-import&debug=false&wt=json} status=0 QTime=71 
+250761 [Thread-35] INFO  org.apache.solr.handler.dataimport.DataImporter  – Starting Full Import
+250770 [qtp12874272-13] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/dataimport params={indent=true&command=status&_=1400748805421&wt=json} status=0 QTime=0 
+250846 [Thread-35] INFO  org.apache.solr.handler.dataimport.SimplePropertiesWriter  – Read dataimport.properties
+250922 [Thread-35] INFO  org.apache.solr.core.SolrCore  – [centinela-core] REMOVING ALL DOCUMENTS FROM INDEX
+251029 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Creating a connection for entity servidor with URL: jdbc:mysql://localhost:3306/ars_monitor
+251487 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Time taken for getConnection(): 458
+251525 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Creating a connection for entity entorno with URL: jdbc:mysql://localhost:3306/ars_monitor
+251535 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Time taken for getConnection(): 10
+251567 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Creating a connection for entity tipo with URL: jdbc:mysql://localhost:3306/ars_monitor
+251576 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Time taken for getConnection(): 9
+251597 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Creating a connection for entity aplicativo with URL: jdbc:mysql://localhost:3306/ars_monitor
+251610 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Time taken for getConnection(): 12
+251631 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Creating a connection for entity entorno with URL: jdbc:mysql://localhost:3306/ars_monitor
+251638 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Time taken for getConnection(): 6
+251666 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Creating a connection for entity cliente with URL: jdbc:mysql://localhost:3306/ars_monitor
+251677 [Thread-35] INFO  org.apache.solr.handler.dataimport.JdbcDataSource  – Time taken for getConnection(): 11
+252489 [Thread-35] INFO  org.apache.solr.handler.dataimport.DocBuilder  – Import completed successfully
+252489 [Thread-35] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+253251 [Thread-35] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/vagrant/centinela/centinela/jetty/solr/centinela-core/data/index,segFN=segments_n,generation=23}
+	commit{dir=/home/vagrant/centinela/centinela/jetty/solr/centinela-core/data/index,segFN=segments_o,generation=24}
+253251 [Thread-35] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 24
+253341 [Thread-35] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@acbe0 main
+253349 [searcherExecutor-4-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: default
+253350 [Thread-35] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+253820 [searcherExecutor-4-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: author
+254264 [searcherExecutor-4-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: subject
+254793 [qtp12874272-13] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/luke params={numTerms=0&_=1400748809358&show=index&wt=json} status=0 QTime=0 
+254809 [qtp12874272-12] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1400748809379} status=0 QTime=13 
+254797 [qtp12874272-27] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/ping params={action=status&_=1400748809383&wt=json} status=503 QTime=0 
+254998 [qtp12874272-29] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/system params={_=1400748809374&wt=json} status=0 QTime=202 
+255052 [qtp12874272-11] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/replication params={command=details&_=1400748809368&wt=json} status=0 QTime=257 
+255058 [searcherExecutor-4-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: title
+255475 [qtp12874272-11] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1400748810076&wt=json} status=0 QTime=2 
+255581 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – [centinela-core] Registered new searcher Searcher@acbe0 main{StandardDirectoryReader(segments_o:66:nrt _k(4.6):C165)}
+255630 [Thread-35] INFO  org.apache.solr.handler.dataimport.SimplePropertiesWriter  – Read dataimport.properties
+256015 [Thread-35] INFO  org.apache.solr.handler.dataimport.SimplePropertiesWriter  – Wrote last indexed time to dataimport.properties
+256046 [qtp12874272-11] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1400748810671&wt=json} status=0 QTime=1 
+256050 [qtp12874272-27] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/dataimport params={indent=true&command=status&_=1400748810676&wt=json} status=0 QTime=1 
+256079 [Thread-35] INFO  org.apache.solr.handler.dataimport.DocBuilder  – Time taken = 0:0:5.230
+256082 [Thread-35] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [centinela-core] webapp=/solr path=/dataimport params={optimize=false&indent=true&clean=true&commit=true&verbose=false&command=full-import&debug=false&wt=json} status=0 QTime=71 {deleteByQuery=*:*,add=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ... (165 adds)],commit=} 0 71
+256092 [qtp12874272-29] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/dataimport params={indent=true&command=show-config&_=1400748810672} status=0 QTime=45 
+260718 [qtp12874272-29] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/luke params={numTerms=0&_=1400748815286&show=index&wt=json} status=0 QTime=32 
+260735 [qtp12874272-12] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/ping params={action=status&_=1400748815299&wt=json} status=503 QTime=0 
+260742 [qtp12874272-11] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1400748815297} status=0 QTime=54 
+260839 [qtp12874272-13] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/replication params={command=details&_=1400748815292&wt=json} status=0 QTime=119 
+260846 [qtp12874272-27] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/system params={_=1400748815295&wt=json} status=0 QTime=159 
+261613 [qtp12874272-27] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1400748816244&wt=json} status=0 QTime=3 
+261737 [qtp12874272-13] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/dataimport params={indent=true&command=status&_=1400748816332&wt=json} status=0 QTime=3 
+261747 [qtp12874272-27] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1400748816326&wt=json} status=0 QTime=1 
+261764 [qtp12874272-11] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/dataimport params={indent=true&command=show-config&_=1400748816327} status=0 QTime=29 
+307135 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=pub_date,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+307138 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_topic_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+307139 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=language_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+307140 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=lc_1letter_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+307140 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_geo_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+307141 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_era_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+307145 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={facet=true&sort=score+desc&facet.query=pub_date:[2009+TO+*]&facet.query=pub_date:[2004+TO+*]&facet.query=pub_date:[1989+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=cliente&facet.field=aplicativo&facet.field=entorno&facet.field=tipo&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&qt=search&wt=ruby&facet.pivot=format,language_facet&rows=10} hits=165 status=0 QTime=194 
+315252 [qtp12874272-31] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={facet=true&sort=score+desc&facet.query=pub_date:[2009+TO+*]&facet.query=pub_date:[2004+TO+*]&facet.query=pub_date:[1989+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=cliente&facet.field=aplicativo&facet.field=entorno&facet.field=tipo&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&qt=search&wt=ruby&facet.pivot=format,language_facet&rows=10} hits=165 status=0 QTime=11 
+323207 [qtp12874272-10] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={id=1&qt=document&wt=ruby} hits=1 status=0 QTime=9 
+323249 [qtp12874272-30] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={facet=false&fl=*&sort=score+desc&start=0&facet.query=pub_date:[2009+TO+*]&facet.query=pub_date:[2004+TO+*]&facet.query=pub_date:[1989+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=cliente&facet.field=aplicativo&facet.field=entorno&facet.field=tipo&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&qt=search&wt=ruby&facet.pivot=format,language_facet&rows=2} hits=165 status=0 QTime=1 
+338203 [qtp12874272-15] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={facet=true&sort=score+desc&start=0&facet.query=pub_date:[2009+TO+*]&facet.query=pub_date:[2004+TO+*]&facet.query=pub_date:[1989+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=cliente&facet.field=aplicativo&facet.field=entorno&facet.field=tipo&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&qt=search&wt=ruby&facet.pivot=format,language_facet&rows=10} hits=165 status=0 QTime=4 
+354965 [qtp12874272-26] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={facet=true&sort=score+desc&facet.query=pub_date:[2009+TO+*]&facet.query=pub_date:[2004+TO+*]&facet.query=pub_date:[1989+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=cliente&facet.field=aplicativo&facet.field=entorno&facet.field=tipo&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&qt=search&wt=ruby&facet.pivot=format,language_facet&rows=10} hits=165 status=0 QTime=5 
+378531 [qtp12874272-10] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={facet=true&sort=score+desc&facet.query=pub_date:[2009+TO+*]&facet.query=pub_date:[2004+TO+*]&facet.query=pub_date:[1989+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=cliente&facet.field=aplicativo&facet.field=entorno&facet.field=tipo&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&qt=search&wt=ruby&fq=entorno:3&facet.pivot=format,language_facet&rows=10} hits=37 status=0 QTime=18 
+385817 [qtp12874272-15] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={id=21&qt=document&wt=ruby} hits=1 status=0 QTime=1 
+385862 [qtp12874272-33] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={facet=false&fl=*&sort=score+desc&start=0&facet.query=pub_date:[2009+TO+*]&facet.query=pub_date:[2004+TO+*]&facet.query=pub_date:[1989+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=cliente&facet.field=aplicativo&facet.field=entorno&facet.field=tipo&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&qt=search&wt=ruby&fq=entorno:3&facet.pivot=format,language_facet&rows=2} hits=37 status=0 QTime=7 
+397706 [qtp12874272-34] INFO  org.apache.solr.core.SolrCore  – [centinela-core] webapp=/solr path=/select params={facet=true&sort=score+desc&start=0&facet.query=pub_date:[2009+TO+*]&facet.query=pub_date:[2004+TO+*]&facet.query=pub_date:[1989+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=cliente&facet.field=aplicativo&facet.field=entorno&facet.field=tipo&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&qt=search&wt=ruby&fq=entorno:3&facet.pivot=format,language_facet&rows=10} hits=37 status=0 QTime=4 

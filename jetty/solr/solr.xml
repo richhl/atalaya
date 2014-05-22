@@ -30,5 +30,6 @@
   -->
   <cores adminPath="/admin/cores" host="${host:}" hostPort="${jetty.port:}"  defaultCoreName="blacklight-core">
     <core name="blacklight-core" instanceDir="blacklight-core" />
+    <core name="centinela-core" instanceDir="centinela-core" />
   </cores>
 </solr>
