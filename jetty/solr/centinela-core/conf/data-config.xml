@@ -19,10 +19,6 @@
               query="select Nombre_Aplicativo from aplicativo where Cod_Aplicativo='${servidor.Aplicativo}'" >
                 <field column="Nombre_Aplicativo" name="aplicativo" />
           </entity>
-          <entity name="entorno"
-              query="select Nombre_Entorno from entorno where Cod_Entorno='${servidor.Entorno}'" >
-                <field column="Nombre_Entorno" name="entorno" />
-          </entity>
           <entity name="cliente"
               query="select Nombre_Cliente from cliente where Cod_Cliente='${servidor.Cliente}'" >
                 <field column="Nombre_Cliente" name="cliente" />
