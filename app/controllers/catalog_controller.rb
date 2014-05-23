@@ -57,10 +57,10 @@ class CatalogController < ApplicationController
     #
     # :show may be set to false if you don't want the facet to be drawn in the 
     # facet bar
-    config.add_facet_field 'cliente', :label => 'Cliente'
-    config.add_facet_field 'aplicativo', :label => 'Servicio'
-    config.add_facet_field 'entorno', :label => 'Entorno'
-    config.add_facet_field 'tipo', :label => 'Tipo'
+    config.add_facet_field 'cliente_facet', :label => 'Cliente'
+    config.add_facet_field 'aplicativo_facet', :label => 'Servicio'
+    config.add_facet_field 'entorno_facet', :label => 'Entorno'
+    config.add_facet_field 'tipo_facet', :label => 'Tipo'
     config.add_facet_field 'format', :label => 'Format'
     config.add_facet_field 'pub_date', :label => 'Publication Year', :single => true
     config.add_facet_field 'subject_topic_facet', :label => 'Topic', :limit => 20 

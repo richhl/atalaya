@@ -2,26 +2,23 @@
 <dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/ars_monitor" user="root" password="" batchSize="1" />  
     <document name="servidores">  
   
-        <entity name="servidor" query="SELECT ID,Servidor,Servidor_Nombre,Puerto,Entorno,Aplicativo,Cliente FROM servidor">  
-          <field column="ID" name="id" />
-          <field column="Servidor" name="fqdn" />
+        <entity name="servidor" query="SELECT * FROM servidor">  
           <field column="Servidor_Nombre" name="hostname" />
-          <field column="Puerto" name="puerto" />
           <entity name="entorno"
-              query="select Nombre_Entorno from entorno where Cod_Entorno='${servidor.Entorno}'" >
-                <field column="Nombre_Entorno" name="entorno" />
+              query="select * from entorno where Cod_Entorno='${servidor.Entorno}'" >
+              <field column="Nombre_Entorno" name="entorno_facet" />
           </entity>
           <entity name="tipo"
-              query="select Tipo from tipo where ID_Tipo='${servidor.Tipo}'" >
-                <field column="Tipo" name="tipo" />
+              query="select * from tipo where ID_Tipo='${servidor.Tipo}'" >
+              <field column="Tipo" name="tipo_facet" />
           </entity>
           <entity name="aplicativo"
-              query="select Nombre_Aplicativo from aplicativo where Cod_Aplicativo='${servidor.Aplicativo}'" >
-                <field column="Nombre_Aplicativo" name="aplicativo" />
+              query="select * from aplicativo where Cod_Aplicativo='${servidor.Aplicativo}'" >
+              <field column="Nombre_Aplicativo" name="aplicativo_facet" />
           </entity>
           <entity name="cliente"
-              query="select Nombre_Cliente from cliente where Cod_Cliente='${servidor.Cliente}'" >
-                <field column="Nombre_Cliente" name="cliente" />
+              query="select * from cliente where Cod_Cliente='${servidor.Cliente}'" >
+              <field column="Nombre_Cliente" name="cliente_facet" />
           </entity>
          </entity>  
     </document>  
