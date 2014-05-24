@@ -1,5 +1,5 @@
 <dataConfig>  
-<dataSource name="catalogo" type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/ars_monitor" user="root" password="richhl1969" batchSize="1" />  
+<dataSource name="catalogo" type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/ars_monitor" user="root" batchSize="1" />  
     <document name="servidores">  
   
         <entity name="servidor" datasource="catalogo" query="SELECT * FROM servidor">  
@@ -22,5 +22,6 @@
               query="select * from cliente where Cod_Cliente='${servidor.Cliente}'" >
               <field column="Nombre_Cliente" name="cliente_facet" />
           </entity>
+         </entity>
     </document>  
 </dataConfig>  
