@@ -1,9 +1,11 @@
 <dataConfig>  
-<dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/ars_monitor" user="root" password="" batchSize="1" />  
+<dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/ars_monitor" user="root" password="richhl1969" batchSize="1" />  
     <document name="servidores">  
   
         <entity name="servidor" query="SELECT * FROM servidor">  
           <field column="Servidor_Nombre" name="hostname" />
+          <field column="Servidor" name="fqdn" />
+          <field column="Puerto" name="puerto" />
           <entity name="entorno"
               query="select * from entorno where Cod_Entorno='${servidor.Entorno}'" >
               <field column="Nombre_Entorno" name="entorno_facet" />

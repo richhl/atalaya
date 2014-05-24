@@ -198,6 +198,9 @@
        <!-- NOT using marc_display because it is large and will slow things down for search results -->
        <str name="fl">
          id, 
+         hostname,
+         fqdn,
+         puerto,
          score,
          author_display,
          author_vern_display, 
@@ -396,6 +399,9 @@
       <!-- NOT using marc_display because it is large and will slow things down for search results -->
       <str name="fl">
         id, 
+        hostname,
+        fqdn,
+        puerto,
         score,
         author_display,
         author_vern_display, 

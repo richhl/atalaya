@@ -85,7 +85,7 @@ class CatalogController < ApplicationController
 
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
-    #config.add_index_field 'id', :label => 'Identificador'
+    config.add_index_field 'id', :label => 'Identificador'
     config.add_index_field 'hostname', :label => 'Nombre'
     config.add_index_field 'fqdn', :label => 'Nombre cualificado'
     config.add_index_field 'puerto', :label => 'Puerto'
@@ -102,7 +102,7 @@ class CatalogController < ApplicationController
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
-    #config.add_show_field 'id', :label => 'Identificador'
+    config.add_show_field 'id', :label => 'Identificador'
     config.add_show_field 'hostname', :label => 'Nombre'
     config.add_show_field 'fqdn', :label => 'Nombre cualificado'
     config.add_show_field 'puerto', :label => 'Puerto'
