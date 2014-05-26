@@ -502,6 +502,8 @@
    <field name="hostname" type="string" indexed="true" stored="true" required="true" />
    <field name="fqdn" type="string" indexed="true" stored="true" required="false" />
    <field name="puerto" type="string" indexed="true" stored="true" required="false" />
+   <field name="numero_usuarios" type="pint" indexed="true" stored="true" required="false" />
+   <field name="memoria_en_uso" type="pint" indexed="true" stored="true" required="false" />
    <field name="tipo_facet" type="string" indexed="true" stored="true" required="false" />
    <field name="cliente_facet" type="string" indexed="true" stored="true"/>
    <field name="entorno_facet" type="string" indexed="true" stored="true"/>

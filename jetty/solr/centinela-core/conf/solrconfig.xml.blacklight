@@ -224,18 +224,18 @@
        <str name="facet.mincount">1</str>
        <str name="facet.limit">10</str>
 <!--       <str name="facet.field">format</str>
-#       <str name="facet.field">lc_1letter_facet</str>
-#       <str name="facet.field">lc_alpha_facet</str>
-#       <str name="facet.field">lc_b4cutter_facet</str>
-#       <str name="facet.field">language_facet</str>
-#       <str name="facet.field">pub_date</str>
-#       <str name="facet.field">subject_era_facet</str>
-#       <str name="facet.field">subject_geo_facet</str>
-#       <str name="facet.field">subject_topic_facet</str>
+       <str name="facet.field">lc_1letter_facet</str>
+       <str name="facet.field">lc_alpha_facet</str>
+       <str name="facet.field">lc_b4cutter_facet</str>
+       <str name="facet.field">language_facet</str>
+       <str name="facet.field">pub_date</str>
+       <str name="facet.field">subject_era_facet</str>
+       <str name="facet.field">subject_geo_facet</str>
+       <str name="facet.field">subject_topic_facet</str>
+       <str name="facet.field">cliente_facet</str>
+       <str name="facet.field">entorno_facet</str>
+       <str name="facet.field">aplicativo_facet</str>
 -->
-       <str name="facet.field">cliente</str>
-       <str name="facet.field">entorno</str>
-       <str name="facet.field">aplicativo</str>
        
        <str name="spellcheck">true</str>
        <str name="spellcheck.dictionary">default</str>
