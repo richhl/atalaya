@@ -1,6 +1,12 @@
 @import 'bootstrap';
 
 @import 'blacklight/blacklight';
+.navbar-inverse{
+	background-color:#195FAC;
+}
+.navbar-inverse .navbar-nav > li > a {
+color: #ccc;
+}
 #documents .document{
 border: none;
 border-radius: 30px;
@@ -12,12 +18,14 @@ margin:.5em;
 padding:0.4em 1em;	
 }
 dt.blacklight-hostname, .blacklight-id{display:none;}
-.dl-horizontal dd{margin:0,}
+.dl-horizontal {margin:0 0 1em 0;}
+.dl-horizontal dd{margin:0;}
 .dl-horizontal dt{width:auto;}
 #documents .document:hover{
 	width:auto;
 	height:auto;
-	background-color: #ddd;
+	background-color: #eee;
+	padding:1.5em;
 	}
 .button{
 	color:white;
@@ -39,3 +47,4 @@ a.button:hover{
 padding-top: .3em;
 	
 	}
+.col-md-3{width:19%;}
