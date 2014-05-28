@@ -1,6 +1,8 @@
 # -*- encoding : utf-8 -*-
 #
 class CatalogController < ApplicationController  
+  before_filter :authenticate_user!
+
   include Blacklight::Marc::Catalog
 
   include Blacklight::Catalog
