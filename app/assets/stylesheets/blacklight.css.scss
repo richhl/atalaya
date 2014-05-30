@@ -7,6 +7,11 @@
 .navbar-inverse .navbar-nav > li > a {
 color: #ccc;
 }
+#header-navbar .navbar-brand {
+background: transparent url(/logoinv.png) no-repeat;
+width: 200px;
+margin: 0.5em 0 0 0;
+}
 #documents .document{
 border: none;
 border-radius: 30px;
@@ -18,9 +23,12 @@ margin:.5em;
 padding:0.4em 1em;	
 }
 dt.blacklight-hostname, .blacklight-id{display:none;}
+.show-document dd.blacklight-hostname{font-size:1.2em;}
+.show-document dt.blacklight-hostname{display:inline;}
+.show-document .dl-horizontal dd{margin-left:1em;}
 .dl-horizontal {margin:0 0 1em 0;}
 .dl-horizontal dd{margin:0;}
-.dl-horizontal dt{width:auto;}
+.dl-horizontal dt{width:10em;text-align:left;}
 #documents .document:hover{
 	width:auto;
 	height:auto;
