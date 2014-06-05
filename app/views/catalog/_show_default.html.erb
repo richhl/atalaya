@@ -1,5 +1,12 @@
 <%# default partial to display solr document fields in catalog show view -%>
-<dl class="dl-horizontal  dl-invert">
+<% alerta =""%>
+<% if render_index_field_value(document,:memoria_en_uso) > '3000' or render_index_field_value(document,:numero_usuarios) < '100'-%>
+<% alerta = "alerta"%>
+<% end-%>
+<% if render_index_field_value(document,:numero_usuarios) < '1'-%>
+<% alerta = "warning"%>
+<% end-%>
+<dl class="dl-horizontal  dl-invert <%=alerta%>">
   <% document_show_fields(document).each do |solr_fname, field| -%>
     <% if should_render_show_field? document, field %>
 	    <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_label document, :field => solr_fname %></dt>
@@ -7,7 +14,7 @@
     <% end -%>
   <% end -%>
 </dl>
-<a href="#" class="btn btn-primary">putty</a>
+<a href="#" class="btn btn-primary">Conexión equipo</a>
 <div class="graph">
 <h2>Usuarios logeados</h2>
 <img src="/usuarios.png" alt="" />

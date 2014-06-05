@@ -2,3 +2,9 @@
 <div id="documents">
   <%= render documents, :as => :document %>
 </div>
+<script>
+$(document).ready(function(){
+	$('.document').hover(function(){$(this).children("div").slideDown()},function(){$(this).children("div").slideUp()})
+	
+	});
+</script>

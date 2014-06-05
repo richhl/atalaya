@@ -16,25 +16,29 @@ margin: 0.5em 0 0 0;
 border: none;
 border-radius: 30px;
 float: left;
-background-color: aliceblue;
-overflow: hidden;
-height: 30px;
+min-width:250px;
+background: url(/servidor.png) no-repeat right top #B6F3AE;
 margin:.5em;
 padding:0.4em 1em;	
+position:relative;
 }
-dt.blacklight-hostname, .blacklight-id{display:none;}
+#documents dt.blacklight-hostname,#documents .blacklight-id,#documents dd.blacklight-hostname{display:none;}
 .show-document dd.blacklight-hostname{font-size:1.2em;}
 .show-document dt.blacklight-hostname{display:inline;}
 .show-document .dl-horizontal dd{margin-left:1em;}
+#documents .document div{
+	display:none;
+	position:absolute;
+	z-index:1;
+width: 100%;
+background-color: #F3F0AE;
+padding: 1em;
+box-shadow: 2px 2px 2px #bbb;
+}
 .dl-horizontal {margin:0 0 1em 0;}
 .dl-horizontal dd{margin:0;}
 .dl-horizontal dt{width:10em;text-align:left;}
-#documents .document:hover{
-	width:auto;
-	height:auto;
-	background-color: #eee;
-	padding:1.5em;
-	}
+
 .button{
 	color:white;
 	padding:0.3em 0.8em;
@@ -50,9 +54,16 @@ a.button:hover{
 	color:white;
 	
 	}
-#documents .document.bajo{
-	border:1px solid red;
-padding-top: .3em;
-	
-	}
+.warning{
+	background:url(/warning.png) no-repeat right top ;
+		}
+.alerta{
+	background:url(/alerta.png) no-repeat right top ;
+		}
+#documents .document.warning{
+	background:url(/warning.png) no-repeat right center #FFA9A9;
+		}
+#documents .document.alerta{
+	background:url(/alerta.png) no-repeat right center #FFF4A5;
+		}
 .col-md-3{width:19%;}
