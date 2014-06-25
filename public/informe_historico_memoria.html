@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>informes</title>
+<meta name="generator" content="Bluefish 2.2.2" />
+<meta name="author" content="Agustin" />
+<meta name="date" content="2014-06-26T00:10:09+0200" />
+<meta name="copyright" content=""/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+<meta http-equiv="content-style-type" content="text/css"/>
+<meta http-equiv="expires" content="0"/>
+<link href="/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css">
+<link href="/assets/blacklight.css?body=1" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="dist/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.pointLabels.min.js"></script>
+<link rel="stylesheet" type="text/css" href="dist/jquery.jqplot.min.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/smoothness/jquery-ui.css" />
+</head>
+<body>
+<div>
+<div id="header-navbar" class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#user-util-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="/" class="navbar-brand">Blacklight</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="user-util-collapse">
+      <div class="navbar-right">
+  <ul class="nav navbar-nav">
+  	<li><a href="informes.html">Informes</a></li>
+    <li>
+      <a href="/bookmarks">Favoritos</a>
+    </li>
+      <li>
+      <a href="/saved_searches">Búsquedas guardadas</a>
+      </li>
+    <li>
+    <a href="/search_history">Historia</a>
+    </li>
+  </ul>
+
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="/users/sign_out">Salir</a>
+      </li>
+      <li>
+        <a href="/users/edit">test@centinela.com</a>
+      </li>
+      </ul>
+</div>
+    </div>
+  </div>
+</div>
+<div id="main">
+<div id="chartsimple1"></div>
+</div>
+</div>
+<script class="code" type="text/javascript">
+$(document).ready(function(){
+        $.jqplot.config.enablePlugins = true;
+        $.jqplot._noToImageButton = true;
+        var s1 = [["12:00",2205],["12:05",2000],["12:10",1500],["12:15",2200],["12:20",3304],["12:25",3293],["12:30",2100],["12:35",1910],["12:40",1000],["12:45",500],["12:50",2093],["12:55",2593]];
+        var s2 = [["12:00",2100],["12:05",1910],["12:10",1000],["12:15",500],["12:20",2093],["12:25",2593],["12:30",2205],["12:35",2000],["12:40",1500],["12:45",2200],["12:50",3304],["12:55",3293]];
+        var s3 = [["12:00",2000],["12:05",1900],["12:10",1800],["12:15",1500],["12:20",2293],["12:25",2293],["12:30",2805],["12:35",2900],["12:40",2500],["12:45",3200],["12:50",3104],["12:55",3593]];
+  		var ticks = ['12:00', '12:05', '12:10', '12:15','12:20','12:25','12:30', '12:35', '12:40', '12:45','12:50','12:55'];
+        
+     var plot1 = $.jqplot("chartsimple1", [s1,s2,s3], {
+        title: 'Historico memoria',
+        highlighter: {
+            show: true,
+        },
+     
+        legend: {
+            show: true,
+            placement: 'outside'
+        },
+        seriesDefaults: {
+            rendererOptions: {
+                 animation: {
+                    show: true
+                }
+            },
+            
+        },
+        series: [
+            {
+                label: 'prxrmd6p31'
+            },
+            {
+                label: 'prxrmd6p33'
+            },
+            {
+                label: 'prxrmd6p35'
+            }
+        ],
+        axes: {
+            xaxis: {
+                renderer: $.jqplot.DateAxisRenderer,
+                tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+                tickOptions: {
+                    angle: -30,
+                    formatString: "%R",
+                },
+                min: "12:00:00",
+                max: "13:00:00",
+                tickInterval: "10 minutes",
+             },
+            yaxis: {
+                renderer: $.jqplot.LogAxisRenderer,
+                 tickOptions: {
+                    showMark: false
+                }
+            }
+        }
+    });
+ 
+      $('.jqplot-highlighter-tooltip').addClass('ui-corner-all')
+    });</script>
+          <!-- Don't touch this! -->
+
+<script type="text/javascript" src="dist/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.logAxisRenderer.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.highlighter.min.js"></script>
+
+
+<!-- End additional plugins -->
+</body>
+</html>
