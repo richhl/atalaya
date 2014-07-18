@@ -5,7 +5,7 @@
 <title>informes</title>
 <meta name="generator" content="Bluefish 2.2.2" />
 <meta name="author" content="Agustin" />
-<meta name="date" content="2014-07-18T12:43:26+0200" />
+<meta name="date" content="2014-07-18T12:15:47+0200" />
 <meta name="copyright" content=""/>
 <meta name="keywords" content=""/>
 <meta name="description" content=""/>
@@ -41,7 +41,6 @@
       <div class="navbar-right">
   <ul class="nav navbar-nav">
   	<li><a href="informes.html">Informes</a></li>
-  	  	<li><a href="informes_sla.html">SLA</a></li>
     <li>
       <a href="/bookmarks">Favoritos</a>
     </li>
@@ -58,7 +57,7 @@
         <a href="/users/sign_out">Salir</a>
       </li>
       <li>
-        <a href="/users/edit">test@centinela.com</a>
+        <a href="/users/edit">test@centinela.org</a>
       </li>
       </ul>
 </div>
@@ -71,77 +70,50 @@
 </div>
 <script class="code" type="text/javascript">
 $(document).ready(function(){
-        $.jqplot.config.enablePlugins = true;
-        $.jqplot._noToImageButton = true;
-        var s1 = [["12:00",205],["12:05",200],["12:10",150],["12:15",220],["12:20",330],["12:25",329],["12:30",210],["12:35",191],["12:40",100],["12:45",50],["12:50",293],["12:55",259]];
-        var s2 = [["12:00",100],["12:05",191],["12:10",100],["12:15",50],["12:20",209],["12:25",259],["12:30",220],["12:35",200],["12:40",150],["12:45",220],["12:50",304],["12:55",329]];
-        var s3 = [["12:00",200],["12:05",190],["12:10",180],["12:15",150],["12:20",229],["12:25",223],["12:30",280],["12:35",290],["12:40",250],["12:45",320],["12:50",314],["12:55",353]];
-  		var ticks = ['12:00', '12:05', '12:10', '12:15','12:20','12:25','12:30', '12:35', '12:40', '12:45','12:50','12:55'];
-        
-     var plot1 = $.jqplot("chartsimple1", [s1,s2,s3], {
-        title: 'Historico usuarios',
-        highlighter: {
-            show: true,
-        },
-     
-        legend: {
+          $.jqplot.config.enablePlugins = true;
+        var s1 = [132,235,27,121,118,101,136,130,20,250,280,260];
+			var s2 = [2,25,11,12,1,11,16,1,0,3,5,10];	
+   var ticks = ['Enero', 'Febrero', 'Marzo', 'Abril','Mayo','Junio','Julio', 'Agosto', 'Septiembre', 'Octubre','Noviembre','Diciembre'];        
+        plot1 = $.jqplot('chartsimple1', [s1,s2], {
+            // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
+            animate: !$.jqplot.use_excanvas,
+            title:'Incidencias totales en linea temporal',
+            seriesDefaults:{
+                renderer:$.jqplot.BarRenderer,
+                pointLabels: { show: true, location: 'n', edgeTolerance: -5 },
+                rendererOptions: {
+                    barMargin:5,
+                }
+            },
+            series: [
+           		{label: 'SLA OK'},
+            	{label: 'SLA KO'}
+        		], 
+        		legend: {
             show: true,
             placement: 'outside'
-        },
-        seriesDefaults: {
-            rendererOptions: {
-                 animation: {
-                    show: true
-                }
-            },
-            
-        },
-        series: [
-            {
-                label: 'prxrmd6p31'
-            },
-            {
-                label: 'prxrmd6p33'
-            },
-            {
-                label: 'prxrmd6p35'
-            }
-        ],
-        axes: {
-            xaxis: {
-                renderer: $.jqplot.DateAxisRenderer,
-                tickRenderer: $.jqplot.CanvasAxisTickRenderer,
-                tickOptions: {
-                    angle: -30,
-                    formatString: "%R",
+        		},
+            axes: {
+                xaxis: {
+                    renderer: $.jqplot.CategoryAxisRenderer,
+                    ticks: ticks
                 },
-                min: "12:00:00",
-                max: "13:00:00",
-                tickInterval: "10 minutes",
-             },
-            yaxis: {
-                renderer: $.jqplot.LogAxisRenderer,
-                 tickOptions: {
-                    showMark: false
-                }
             }
-        }
-    });
- 
-      $('.jqplot-highlighter-tooltip').addClass('ui-corner-all')
+        });
+    
+      
     });</script>
           <!-- Don't touch this! -->
+    <script class="include" type="text/javascript" src="dist/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="dist/examples/syntaxhighlighter/scripts/shCore.min.js"></script>
+    <script type="text/javascript" src="dist/examples/syntaxhighlighter/scripts/shBrushJScript.min.js"></script>
+    <script type="text/javascript" src="dist/examples/syntaxhighlighter/scripts/shBrushXml.min.js"></script>
+<!-- Additional plugins go here -->
 
-
-
-<script type="text/javascript" src="dist/jquery.jqplot.min.js"></script>
-<script type="text/javascript" src="dist/plugins/jqplot.dateAxisRenderer.min.js"></script>
-<script type="text/javascript" src="dist/plugins/jqplot.logAxisRenderer.min.js"></script>
-<script type="text/javascript" src="dist/plugins/jqplot.canvasTextRenderer.min.js"></script>
-<script type="text/javascript" src="dist/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
-<script type="text/javascript" src="dist/plugins/jqplot.highlighter.min.js"></script>
-
-
+  <script class="include" type="text/javascript" src="dist/plugins/jqplot.barRenderer.min.js"></script>
+  <script class="include" type="text/javascript" src="dist/plugins/jqplot.pieRenderer.min.js"></script>
+  <script class="include" type="text/javascript" src="dist/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+  <script class="include" type="text/javascript" src="dist/plugins/jqplot.pointLabels.min.js"></script>
 <!-- End additional plugins -->
 </body>
 </html>

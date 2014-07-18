@@ -50,13 +50,14 @@ box-shadow: 2px 2px 2px #bbb;
 	width:4em;
 }
 
-.cartas{
+.cartas, .cartas_row{
 	display:block;
 	width:45%;
 	float:left;
 	margin:0 1em 1em 0.5em;
 }
-.cartas a{
+.cartas_row{width:80%;}
+.cartas a, .cartas_row a{
 	display:block;
 	padding:0.1em 0.3em;
 	border: 1px solid rgb(185, 185, 243);

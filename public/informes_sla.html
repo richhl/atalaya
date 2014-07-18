@@ -5,7 +5,7 @@
 <title>informes</title>
 <meta name="generator" content="Bluefish 2.2.2" />
 <meta name="author" content="Agustin" />
-<meta name="date" content="2014-07-18T12:40:08+0200" />
+<meta name="date" content="2014-07-18T12:26:39+0200" />
 <meta name="copyright" content=""/>
 <meta name="keywords" content=""/>
 <meta name="description" content=""/>
@@ -42,7 +42,6 @@
       <div class="navbar-right">
   <ul class="nav navbar-nav">
   	<li><a href="informes.html">Informes</a></li>
-  	<li><a href="informes_sla.html">SLA</a></li>
     <li>
       <a href="/bookmarks">Favoritos</a>
     </li>
@@ -67,22 +66,23 @@
   </div>
 </div>
 <div id="main">
-<div class="cartas"><div id="chart1"></div><a href="informe_historico_usuarios.html">histórico</a></div>
-<div class="cartas"><div id="chart2"></div><a href="informe_historico_memoria.html">histórico</a></div>
-<div class="cartas"><div id="chart3"></div><a href="informe_historico_GSC.html">histórico</a></div>
-<div class="cartas"><div id="chart4"></div><a href="informe_historico_gpp.html">histórico</a></div>
+<div class="cartas_row"><div id="chart1"></div><a href="informe_historico_incidencias.html">histórico</a></div>
+<div class="cartas_row"><div id="chart2"></div></div>
 </div>
 </div>
 </div>
   <script class="code" type="text/javascript">$(document).ready(function(){
         $.jqplot.config.enablePlugins = true;
-        var s1 = [320, 6,277, 210,180,0,362];
-        var ticks = ['prxrmd6p31', 'prxrmd6p33', 'prxrmd6p37', 'prxrmd6p35','gscar.isban.dev.corp','gscar.produban.pre.corp','prxrmd6p23'];
+        var s1 = [32,35,7,21,18,1,36];
+			var s2 = [2,5,1,2,1,1,6];	
+			var s3 = [0,1,0,2,1,0,0];
+        var ticks = ['Soporte AACC Host', 'Tec sistemas AACC Backup', 'Tec sistemas AACC BBDD', 'Tec sistemas AACC UNIX','Tec sistemas AACC Catalogo','Tec sistemas AACC Portales','Tec sistemas AACC Microsoft'];
         
-        plot1 = $.jqplot('chart1', [s1], {
+        plot1 = $.jqplot('chart1', [s1,s2,s3], {
             // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
             animate: !$.jqplot.use_excanvas,
-            title:'Usuarios logeados',
+            title:'Incidencias por grupos de soporte',
+            stackSeries: true,
             seriesDefaults:{
                 renderer:$.jqplot.BarRenderer,
                 pointLabels: { show: true, location: 'w', edgeTolerance: -5 },
@@ -91,6 +91,21 @@
                     barMargin:5
                 }
             },
+            series: [
+           {
+                label: 'SLA OK'
+            },
+            {
+                label: 'SLA KO'
+            },
+            {
+                label: 'Sin fecha de cierre'
+            }
+        ], 
+        legend: {
+            show: true,
+            placement: 'outside'
+        },
             axes: {
                 yaxis: {
                     renderer: $.jqplot.CategoryAxisRenderer,
@@ -104,21 +119,35 @@
     });</script>
       <script class="code" type="text/javascript">$(document).ready(function(){
         $.jqplot.config.enablePlugins = true;
-        var s1 = [2100, 2600, 2150, 2550,2312,3045,3293];
-  		var ticks = ['prxrmd6p31', 'prxrmd6p33', 'prxrmd6p37', 'prxrmd6p35','gscar.isban.dev.corp','gscar.produban.pre.corp','prxrmd6p23'];
+        var s1 = [210,20,12];
+        var s2 = [2,0,1];
+  		var ticks = ['GSC', 'GPP', 'GESTI'];
         
-        plot1 = $.jqplot('chart2', [s1], {
+        plot1 = $.jqplot('chart2', [s1,s2], {
             // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
             animate: !$.jqplot.use_excanvas,
-				title:'Uso de memoria',            
+				title:'SLA de peticiones por servicio',            
             seriesDefaults:{
                 renderer:$.jqplot.BarRenderer,
-                pointLabels: { show: true, location: 'w', edgeTolerance: -5 },
+                pointLabels: { show: true, location: 'e', edgeTolerance: -5 },
                 rendererOptions: {
                     barDirection: 'horizontal',
                     barMargin:5
                 }
             },
+            series: [
+           {
+                label: 'SLA Correcto'
+            },
+            {
+                label: 'Fuera SLA'
+            },
+          
+        ], 
+        legend: {
+            show: true,
+            placement: 'outside'
+        },
             axes: {
                 yaxis: {
                     renderer: $.jqplot.CategoryAxisRenderer,
@@ -130,64 +159,8 @@
     
 
     });</script>
-          <script class="code" type="text/javascript">$(document).ready(function(){
-        $.jqplot.config.enablePlugins = true;
-        var s1 = [0, 0, 5, 2,33045,3293];
-        var s2 = [0, 0, 10,0,32093,3593];
-  		var ticks = ['standard_HPD', 'standard_CHG', 'TOTTA_UPD', 'TOTTA_OUT','DSO','emails'];
-        
-        plot1 = $.jqplot('chart3', [s1,s2], {
-            // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
-            animate: !$.jqplot.use_excanvas,
-				title:'GSC',            
-            seriesDefaults:{
-                renderer:$.jqplot.BarRenderer,
-                pointLabels: { show: true, location: 'w', edgeTolerance: -5 },
-                rendererOptions: {
-                    barDirection: 'horizontal',
-                    barMargin:5
-                }
-            },
-            axes: {
-                yaxis: {
-                    renderer: $.jqplot.CategoryAxisRenderer,
-                    ticks: ticks
-                }
-            },
-            highlighter: { show: false }
-        });
-    
 
-    });</script>
-            <script class="code" type="text/javascript">$(document).ready(function(){
-        $.jqplot.config.enablePlugins = true;
-        var s1 = [4, 3, 0,2, 0,33];
-        var s2 = [3, 3, 0,3, 0,16];
-  		var ticks = ['DASHBOARD', 'Autoloader', 'VISTA', 'DASH_UP','DSO','emails'];
-        
-        plot1 = $.jqplot('chart4', [s1,s2], {
-            // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
-            animate: !$.jqplot.use_excanvas,
-				title:'GPP',            
-            seriesDefaults:{
-                renderer:$.jqplot.BarRenderer,
-                pointLabels: { show: true, location: 'w', edgeTolerance: -5 },
-                rendererOptions: {
-                    barDirection: 'horizontal',
-                    barMargin:5
-                }
-            },
-            axes: {
-                yaxis: {
-                    renderer: $.jqplot.CategoryAxisRenderer,
-                    ticks: ticks
-                }
-            },
-            highlighter: { show: false }
-        });
-    
-
-    });</script><!-- Don't touch this! -->
+ <!-- Don't touch this! -->
 
 
     <script class="include" type="text/javascript" src="dist/jquery.jqplot.min.js"></script>
